@@ -127,15 +127,6 @@
                 <mxCell id="26" value="user_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="23">
                     <mxGeometry y="206" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" value="" style="endArrow=none;html=1;rounded=0;exitX=-0.012;exitY=0.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="23" source="30">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-80" y="119" as="sourcePoint"/>
-                        <mxPoint x="-3" y="189" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-50" y="169"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="39" value="" style="line;strokeWidth=1;rotatable=0;dashed=0;labelPosition=right;align=left;verticalAlign=middle;spacingTop=0;spacingLeft=6;points=[];portConstraint=eastwest;" vertex="1" parent="1">
                     <mxGeometry x="170" y="30" width="410" height="10" as="geometry"/>
                 </mxCell>
@@ -191,15 +182,6 @@
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="190" y="20" as="sourcePoint"/>
                         <mxPoint x="190" y="50" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="66" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.006;entryY=0.783;entryDx=0;entryDy=0;exitX=0.05;exitY=1.083;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="30">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="30" y="430" as="sourcePoint"/>
-                        <mxPoint x="440" y="440" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="20" y="410"/>
-                        </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="71" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">

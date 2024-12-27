@@ -19,7 +19,6 @@
 - has_many :items
 - has_many :comments
 - has_many :purchases
-- has_many :shipping_addresss
 
 ## items テーブル
 
@@ -85,7 +84,6 @@
 
 ### Association
 
-- belongs_to :user
 - has_one :purchase
 
 
