@@ -11,7 +11,7 @@
 | last_name           | string | null: false |
 | furigana_first_name | string | null: false |
 | furigana_last_name  | string | null: false |
-| date of birth       | string | null: false |
+| date                | string | null: false |
 
 
 ### Association
@@ -19,7 +19,7 @@
 - has_many :items
 - has_many :comments
 - has_many :purchases
-- has_many :shipping-addresss
+- has_many :shipping_addresss
 
 ## items テーブル
 
@@ -30,9 +30,9 @@
 | detail              | text   | null: false |
 | states              | string | null: false |
 | category            | string | null: false |
-| shipping-fee-status | string | null: false |
+| shipping_fee_status | string | null: false |
 | prefecture          | string | null: false |
-| sucheduled-delivery | string | null: false |
+| sucheduled_delivery | string | null: false |
 | price               | string | null: false |
 | user                | reference | null: false, foreign_key: true |
 
@@ -62,24 +62,24 @@
 | ---------------- | --------- | ------------------------------ |
 | item             | reference | null: false, foreign_key: true |
 | user             | reference | null: false, foreign_key: true |
-| shipping-address | reference | null: false, foreign_key: true |
+| shipping_address | reference | null: false, foreign_key: true |
 
 
 ### Association
 - belongs_to :user
 - has_many :comments
-- belongs_to :shipping-address
+- belongs_to :shipping_address
 
-## shipping-address テーブル
+## shippin_address テーブル
 
 | Column       | Type       | Options     |
 | ------------ | ---------- | ----------- |
-| postal-code  | string     | null: false |
+| postal_code  | string     | null: false |
 | prefecture   | string     | null: false |
 | city         | text       | null: false |
 | addresses    | string     | null: false |
 | building     | string     | null: false |
-| phone-number | string     | null: false |
+| phone_number | string     | null: false |
 | user         | references | null: false, foreign_key: true |
 
 
