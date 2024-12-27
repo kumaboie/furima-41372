@@ -66,7 +66,7 @@
 ### Association
 - belongs_to :user
 - has_many :comments
-- belongs_to :shipping_address
+- has_one  :shipping_address
 
 ## shippin_address テーブル
 
@@ -83,7 +83,7 @@
 
 ### Association
 
-- has_one :purchase
+- belongs_to :purchase
 
 
 
