@@ -74,7 +74,7 @@
 | ------------ | ---------- | ----------- |
 | postal_code  | string     | null: false |
 | prefecture   | string     | null: false |
-| city         | text       | null: false |
+| city         | string     | null: false |
 | addresses    | string     | null: false |
 | building     | string     | null: false |
 | phone_number | string     | null: false |
