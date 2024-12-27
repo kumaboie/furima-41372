@@ -7,10 +7,10 @@
 | nickname            | string | null: false |
 | email               | string | null: false, unique: true |
 | password            | string | null: false |
-| first name          | string | null: false |
-| last name           | string | null: false |
-| furigana first name | string | null: false |
-| furigana last name  | string | null: false |
+| first_name          | string | null: false |
+| last_name           | string | null: false |
+| furigana_first_name | string | null: false |
+| furigana_last_name  | string | null: false |
 | date of birth       | string | null: false |
 
 
