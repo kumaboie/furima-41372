@@ -24,7 +24,6 @@
 
 | Column              | Type   | Options     |
 | ------------------- | ------ | ----------- |
-| image               | string | null: false |
 | title               | string | null: false |
 | detail              | text   | null: false |
 | states              | string | null: false |
