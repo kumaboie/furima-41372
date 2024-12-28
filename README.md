@@ -60,7 +60,6 @@
 | ---------------- | --------- | ------------------------------ |
 | item             | reference | null: false, foreign_key: true |
 | user             | reference | null: false, foreign_key: true |
-| shipping_address | reference | null: false, foreign_key: true |
 
 
 ### Association
