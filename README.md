@@ -37,7 +37,7 @@
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :purchases
+- belongs_to :purchase
 
 
 ## comments テーブル
