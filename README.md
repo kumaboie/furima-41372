@@ -65,6 +65,7 @@
 
 ### Association
 - belongs_to :user
+- has_many :items
 - has_many :comments
 - has_one  :shipping_address
 
