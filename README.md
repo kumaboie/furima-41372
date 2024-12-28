@@ -69,7 +69,7 @@
 - has_many :comments
 - has_one  :shipping_address
 
-## shippin_address テーブル
+## shipping_addresses テーブル
 
 | Column       | Type       | Options     |
 | ------------ | ---------- | ----------- |
