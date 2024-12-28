@@ -11,7 +11,7 @@
 | last_name           | string | null: false |
 | furigana_first_name | string | null: false |
 | furigana_last_name  | string | null: false |
-| date                | string | null: false |
+| birth_date          | date   | null: false |
 
 
 ### Association
