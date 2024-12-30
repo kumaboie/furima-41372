@@ -8,12 +8,13 @@ class Item < ApplicationRecord
   belongs_to :sucheduled_delivery
   has_one_attached :image
   belongs_to :user
-  has_one :purchase
 
-  # 空の投稿を保存できないようにする
-  validates :title, :detail, :price, presence: true
+  validates :title, presence: true, length: { maximum: 40 }
+  validates :detail, presence: true, length: { maximum: 1000 }
+  validates :image, presence: true
+  validates :price, presence: true,
+                    numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }, format: { with: /\A[0-9]+\z/ }
 
-  # ジャンルの選択が「---」の時は保存できないようにする
-  validates :category_id, :states_id, :shipping_fee_states_id, :prefecture_id, :sucheduled_delivery_id,
+  validates :category_id, :states_id, :shipping_fee_status_id, :prefecture_id, :sucheduled_delivery_id,
             numericality: { other_than: 1, message: "can't be blank" }
 end

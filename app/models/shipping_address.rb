@@ -9,4 +9,3 @@ class ShippingAddress < ApplicationRecord
   validates :phone_number, presence: true, format: {with: /\A[0-9]+\z/i, message: "is invalid. Input half-width characters."}
 end
 
-end
