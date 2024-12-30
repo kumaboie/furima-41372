@@ -8,6 +8,7 @@ class Item < ApplicationRecord
   belongs_to :sucheduled_delivery
   has_one_attached :image
   belongs_to :user
+  has_one :purchase
 
   validates :title, presence: true, length: { maximum: 40 }
   validates :detail, presence: true, length: { maximum: 1000 }
