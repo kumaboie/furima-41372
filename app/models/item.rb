@@ -13,7 +13,7 @@ class Item < ApplicationRecord
   validates :detail, presence: true, length: { maximum: 1000 }
   validates :image, presence: true
   validates :price, presence: true,
-                    numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }, format: { with: /\A[0-9]+\z/ }
+                    numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
 
   validates :category_id, :states_id, :shipping_fee_status_id, :prefecture_id, :sucheduled_delivery_id,
             numericality: { other_than: 1, message: "can't be blank" }
