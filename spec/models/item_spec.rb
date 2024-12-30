@@ -29,27 +29,27 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include "Detail can't be blank"
       end
       it 'category_idが空では投稿できない' do
-        @item.category_id = 'Category.first.id '
+        @item.category_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "Category can't be blank"
       end
       it 'states_idが空では投稿できない' do
-        @item.states_id = 'States.first.id '
+        @item.states_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "States can't be blank"
       end
       it 'shipping_fee_status_idが空では投稿できない' do
-        @item.shipping_fee_status_id = 'ShippingFeeStatus.first.id '
+        @item.shipping_fee_status_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "Shipping fee status can't be blank"
       end
       it 'prefecture_idが空では投稿できない' do
-        @item.prefecture_id = 'Prefecture.first.id '
+        @item.prefecture_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "Prefecture can't be blank"
       end
       it 'sucheduled_delivery_idが空では投稿できない' do
-        @item.sucheduled_delivery_id = 'SucheduledDelivery.first.id '
+        @item.sucheduled_delivery_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "Sucheduled delivery can't be blank"
       end
