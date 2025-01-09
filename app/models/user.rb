@@ -11,7 +11,7 @@ class User < ApplicationRecord
   validates :furigana_last_name, presence: true, format: { with: /\A[ァ-ヶー]+\z/ }
   validates :birth_date, presence: true
 
-  has_many :purchases
+  has_many :orders
   has_many :items
 
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
