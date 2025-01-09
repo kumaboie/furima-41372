@@ -4,6 +4,8 @@ RSpec.describe OrderAddress, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 
   before do
+    user = FactoryBot.create(:user)
+    item = FactoryBot.create(:item)
     @order_address = FactoryBot.build(:order_address)
   end
 
