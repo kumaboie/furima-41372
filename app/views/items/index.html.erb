@@ -134,11 +134,12 @@
         <div class='item-img-content'>
           <%= image_tag "#{url_for(item.image)}", class: "item-img" %>
 
-          <%# if item.purchase.exists? %>
+        <% if item.order.present? %>
           <div class='sold-out'>
             <span>Sold Out!!</span>
           </div>
-          <%# end %>
+          <% else %>
+          <% end %>
 
         </div>
         <div class='item-info'>
